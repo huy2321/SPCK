@@ -198,7 +198,9 @@ body {
   color: #222;
   background: #f8f8f8;
   font-weight: 400;
-  font-family: Poppins; }
+  font-family: Poppins;
+  margin-top: 120px;
+ }
 
 .container {
   width: 900px;

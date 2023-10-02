@@ -3,7 +3,7 @@ import { createUserWithEmailAndPassword } from "https://www.gstatic.com/firebase
 
 const usernameElm = document.getElementById('username');
 const passwordElm = document.getElementById('password');
-const registerBtn = document.getElementById('registerbtn');
+const registerBtn = document.getElementById('register-form');
 
 const handleRegister = () => {
     const email = usernameElm.value;
