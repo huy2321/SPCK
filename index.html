@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div class="header">
+        <img src="images/icon.png" alt="">
+        <button class="home">Home</button>
+        <button id="change-password"> Change password</button>
+        <span id="welcome-text">chao mung </span>
         <button id="logout"> Logout</button>
-    </div>
-    <button id="change-password"> Change password</button>
+        
+        <div class="imgindexx">
+            <a href="profile.html"><button> <img src="" alt="Avatar" id="imageindex" width="50px"></button></a>
+        </div>
 
-    <h1 id="welcome-text">chao mung </h1>
-    <h3>click vao logout de dang nhap</h3>
-    
 
-    <script type="module" src="firebase/displayName.js"></script>
-    <script src="./js/index.js"></script>
-    <script type="module" src="firebase/logout.js"></script>
+
+        <script type="module" src="firebase/displayName.js"></script>
+        <script src="./js/index.js"></script>
+        <script type="module" src="firebase/logout.js"></script>
+        <script type="module" src="firebase/index.js"></script>
 </body>
+
 </html>
