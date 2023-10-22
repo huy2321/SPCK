@@ -1,43 +1,111 @@
-*{
+* {
     margin: 0;
-    padding:0;
+    padding: 0;
 }
-.header{
+body{
+    text-decoration: none;
+}
+.header {
     background-color: rgb(45, 45, 51);
-    display:flex;
+    display: flex;
     padding-left: 15%;
     padding-right: 15%;
 }
-.home{
+
+.home {
     padding: 10px;
     /* background-color: rgb(45, 45, 51); */
     border: none;
-    border:  black right 3px; ;
+    border: black right 3px;
     width: 104px;
     border-right: 1px solid #000000;
     background: #333;
-    color:#ccc;
+    color: #ccc;
 }
-#logout{
+
+#logout {
     padding: 10px;
     /* background-color: rgb(45, 45, 51); */
     border: none;
-    border:  black right 3px; ;
+    border: black right 3px;
+    ;
     width: 104px;
-    border-right: 1px solid #000000;
+    /* border-right: 1px solid #000000; */
     background: #333;
-    color:#ccc;
+    color: #ccc;
+    font-size: 12px;
 }
-#change-password{
+
+#change-password {
     padding: 10px;
     /* background-color: rgb(45, 45, 51); */
     border: none;
-    border:  black right 3px; ;
+    border: black right 3px;
+    ;
     width: 104px;
-    border-right: 1px solid #000000;
+    /* border-right: 1px solid #000000; */
     background: #333;
-    color:#ccc;
+    font-size: 12px;
+    color: #ccc;
 }
-.profilebody{
-    
+
+#imageindex {
+    border-radius: 50%;
+    ;
+    border: 1px solid #a1a1a1;
+    height: 30px;
+    width: 30px;
+    margin: 7px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 5px;
+    text-align: center;
+    background-color: #333;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#welcome-text {
+    color: #ccc;
+}
+
+.profile {
+    background: linear-gradient(315deg, rgb(237, 237, 237) 0%, rgb(106, 106, 106) 100%);
+    display: flex;
+    padding: 20px;
+
+}
+
+.buton {
+    margin-left: 930px;
+    padding: 3px;
+}
+
+#boddy {
+
+    margin-right: 290px;
+    margin-left: 290px;
+}
+
+#fullname {
+    margin-top: 20px;
+    display: inline-block;
+    background: black;
+    color: white;
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

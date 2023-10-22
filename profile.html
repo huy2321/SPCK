@@ -11,36 +11,41 @@
 <body>
   <div class="header">
     <img src="images/icon.png" alt="">
-    <button class="home">Home</button>
-    <button id="change-password"> Change password</button>
-    <button id="logout"> Logout</button>
-  </div>
-
-  <h1>Thong tin ca nnhan</h1>
-  <div class="profilebody">
-    <div class="card p-4">
-      <div class=" image d-flex flex-column justify-content-center align-items-center">
-        <button> <img src="" alt="Avatar" id="image" width="100" height="100"></button> <br>
-        <br>
-
-        <span class="name mt-3">
-          <p id="fullname"></p>
-        </span>
-        <div class="d-flex flex-row justify-content-center align-items-center gap-2">
-          <span><i class="fa fa-copy"></i></span>
-        </div>
+    <button id="index" class="home">Home</button>
+    <div class="dropdown">
+      <div class="imgindexx">
+        <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
+      </div>
+      <div class="dropdown-content">
+        <span id="welcome-text">chao mung </span>
+        <button id="change-password"> Change password</button>
+        <button id="logout"> Logout</button>
       </div>
     </div>
-    <div>
-      <a href="profile-edit.html"><button class="btn1 btn-dark">Edit Profile</button></a>
+  </div>
+
+
+  <div id="boddy">
+    <div class="profile">
+      <img src="" alt="Avatar" id="image" style="border-radius: 50%;
+        border:1px solid #a1a1a1;
+        height: 200px;
+        width: 200px;">
+      <div class="name">
+        <p id="fullname"></p>
+      </div>
+      <a href="profile-edit.html"><button class="buton">Edit Profile</button></a>
     </div>
 
+  </div>
 
 
 
 
 
-    <script type="module" src="./firebase/profile.js"></script>
+
+  <script type="module" src="firebase/narbar.js"></script>
+  <script type="module" src="./firebase/profile.js"></script>
 </body>
 
 </html>
