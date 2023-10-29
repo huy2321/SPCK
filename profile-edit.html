@@ -1,19 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
+
 <body>
-    <h1>Profile-edit</h1>
+    <div class="header">
+        <img src="images/icon.png" alt="">
+        <a href="index.html">
+            <p class="home">Home</p>
+        </a>
+        <p class="home">Library</p>
+        <p class="home">Feed</p>
+        <div class="parent">
+            <input class="input" type="type" placeholder="Search...">
 
-    <input type="text" id="name" placeholder=" ho ten">
-    <input type="text" id="photo" placeholder="link anh" >
+        </div>
+        <p class="home">Upload</p>
 
-    <button id="submit-btn">submit</button>
+
+        <div class="dropdown">
+            <div class="imgindexx">
+                <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
+            </div>
+            <div class="dropdown-content">
+                <span id="welcome-text"> </span>
+                <button id="change-password"> <span>Change password</span></button>
+                <button id="logout"> Logout</button>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <h1>Profile-edit</h1>
+
+        <input type="text" id="name" placeholder=" ho ten">
+        <input type="text" id="photo" placeholder="link anh">
+
+        <button id="submit-btn">submit</button>
+    </div>
     <!-- <script type="module" src="./firebase/updateProfile.js"></script> -->
+
+
+
+
+
+    <script src="./js/index.js"></script>
+    <script type="module" src="firebase/narbar.js"></script>
+    <script type="module" src="firebase/displayName.js"></script>
     <script type="module" src="./firebase/getProfile.js"></script>
-    
+
 </body>
+
 </html>

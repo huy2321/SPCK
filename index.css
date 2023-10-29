@@ -10,6 +10,7 @@ a{
     display:flex;
     padding-left: 15%;
     padding-right: 15%;
+    
 }
 .home{
     padding: 10px;
@@ -95,4 +96,35 @@ a{
   }
   #welcome-text{
     color:#161414;
+  }
+  .parent {
+    position: relative;
+  }
+  
+  .input {
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    width: 240px;
+  }
+  #body{
+    margin-right: 290px;
+    margin-left: 231px; 
+  }
+  #new-password{
+    background: linear-gradient(315deg, rgb(129, 128, 128) 0%, rgba(154, 153, 153, 0.652) 100%);
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px ;
+    width: 240px;
+  }
+  #change-btn{
+    padding: 5px;
+    background-color: linear-gradient(315deg, rgb(129, 128, 128) 0%, rgba(154, 153, 153, 0.652) 100%);
+    border: none;
+
   }

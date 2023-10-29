@@ -11,14 +11,25 @@
 <body>
   <div class="header">
     <img src="images/icon.png" alt="">
-    <button id="index" class="home">Home</button>
+    <a href="index.html">
+      <p class="home">Home</p>
+    </a>
+    <p class="home">Library</p>
+    <p class="home">Feed</p>
+    <div class="parent">
+      <input class="input" type="type" placeholder="Search...">
+
+    </div>
+    <p class="home">Upload</p>
+
+
     <div class="dropdown">
       <div class="imgindexx">
         <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
       </div>
       <div class="dropdown-content">
-        <span id="welcome-text">chao mung </span>
-        <button id="change-password"> Change password</button>
+        <span id="welcome-text"> </span>
+        <button id="change-password"> <span>Change password</span></button>
         <button id="logout"> Logout</button>
       </div>
     </div>
@@ -43,7 +54,8 @@
 
 
 
-
+  <script src="./js/index.js"></script>
+  <script type="module" src="firebase/displayName.js"></script>
   <script type="module" src="firebase/narbar.js"></script>
   <script type="module" src="./firebase/profile.js"></script>
 </body>
