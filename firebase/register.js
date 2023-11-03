@@ -6,6 +6,7 @@ const passwordElm = document.getElementById('password');
 const registerBtn = document.getElementById('register-form');
 
 const handleRegister = () => {
+  e.preventDefault()
     const email = usernameElm.value;
     const password = passwordElm.value;
     createUserWithEmailAndPassword(auth, email, password)
@@ -20,4 +21,5 @@ const handleRegister = () => {
     alert(errorCode)
   });
 };
-registerBtn.addEventListener("click",handleRegister);
+registerBtn.addEventListener("submit",handleRegister);
+
