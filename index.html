@@ -66,7 +66,7 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="playlist.html">Playlist</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="upload.html">Upload</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="playlist.html">Playlist</a></li>
@@ -81,25 +81,24 @@
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login</a>
-                                        <a href="#">/</a>
-                                        <a href="register.html" id="loginBtn">Register</a>
-                                    </div>
 
-                                    <div class="imgindexx">
+                                <ul>
+                                    <li class="imgindexx">
                                         <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
-                                    </div>
+                                        <ul class="dropdown">
+                                            <li><span  id="welcome-text">chao mung </span></li>
+                                            <li><button  id="change-password"> <span >Change password</span></button></li>
+                                            <li><button class="btnhv" id="logout"> Logout</button></li>
+                                        </ul>
+                                    </li>
+                                </ul>
 
-                                </div>
+
+
                             </div>
-                            <!-- Nav End -->
-
                         </div>
-                    </nav>
+                        <!-- Nav End -->
+
                 </div>
             </div>
         </div>
@@ -132,7 +131,7 @@
             <!-- Single Hero Slide -->
             <div class="single-hero-slide d-flex align-items-center justify-content-center">
                 <!-- Slide Img -->
-                <div class="slide-img bg-img" style="background-image: url(img/bg-img/bg-2.jpg);"></div>
+                <div class="slide-img bg-img" style="background-image: url(images/bg-img/bg-2.jpg);"></div>
                 <!-- Slide Content -->
                 <div class="container">
                     <div class="row">
@@ -891,19 +890,21 @@
 
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
-    <script src="./js/jquery/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery/jquery-2.2.4.min.js"></script>
     <!-- Popper js -->
-    <script src="./js/bootstrap/popper.min.js"></script>
+    <script src="js/bootstrap/popper.min.js"></script>
     <!-- Bootstrap js -->
-    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="js/bootstrap/bootstrap.min.js"></script>
     <!-- All Plugins js -->
-    <script src="./js/plugins/plugins.js"></script>
+    <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
-    <script src="./js/active.js"></script>
     <script type="module" src="firebase/displayName.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/playlist.js"></script>
+    <script src="js/active.js"></script>
+    <script type="module" src="firebase/displayName.js"></script>
     <script type="module" src="firebase/logout.js"></script>
     <script type="module" src="firebase/narbar.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>

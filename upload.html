@@ -19,9 +19,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
+    <!-- Preloader -->
 
 
     <!-- ##### Header Area Start ##### -->
@@ -53,11 +55,11 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="playlist.html">Playlist</a></li>
-                                    <li><a href="upload.html">Upload</a>
+                                    <li><a href="albums-store.html">Albums</a></li>
+                                    <li><a href="#">Upload</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="playlist.html">Playlist</a></li>
+                                            <li><a href="albums-store.html">Albums</a></li>
                                             <li><a href="event.html">Events</a></li>
                                             <li><a href="blog.html">News</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -69,24 +71,17 @@
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
-
-                                <ul>
-                                    <li class="imgindexx">
+                                <!-- Login/Register & Cart Button -->
+                                <div class="login-register-cart-button d-flex align-items-center">
+                                    <div class="imgindexx">
                                         <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
-                                        <ul class="dropdown">
-                                            <li><span  id="welcome-text">chao mung </span></li>
-                                            <li><button  id="change-password"> <span >Change password</span></button></li>
-                                            <li><button class="btnhv" id="logout"> Logout</button></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-
-
-
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <!-- Nav End -->
+                            <!-- Nav End -->
 
+                        </div>
+                    </nav>
                 </div>
             </div>
         </div>
@@ -96,115 +91,54 @@
     <!-- ##### Breadcumb Area Start ##### -->
     <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(images/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
-            <p>See playlist </p>
-            <h2>Your playlist</h2>
+            <p>See what’s new</p>
+            <h2>Upload song</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
 
-
-    <!-- ##### Add Area Start ##### -->
-    <div class="add-area mb-100">
+    <!-- ##### Login Area Start ##### -->
+    <section class="login-area section-padding-100">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="adds">
-                        <a href="#"><img src="img/bg-img/add3.gif" alt=""></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Add Area End ##### -->
-
-    <!-- ##### Song Area Start ##### -->
-    <div class="one-music-songs-area mb-70">
-        <div class="container">
-            <div class="row1" id="playlist">
-                <!-- Single Song Area -->
-                <template id="song-template">
-                    <div class="col-12">
-
-                        <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                            <div class="song-play-area">
-                                <div class="song-thumbnail">
-                                    <img src="img/bg-img/s1.jpg" alt="" id="song-image" >
-                                </div>
-                                
-
-                                <div id="audioPlayer">
-                                    <div class="song-name1">
-                                        <span id="song-name">01. Main Hit Song </span><br><span id="song-singer">Name</span>
-                                    </div>
-                                    <audio controls>
-                                        <source src="audio.mp3" type="audio/mpeg" id="song-audio">
-                                        Your browser does not support the audio tag.
-                                    </audio>
-                                </div>
-                                <!-- <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3" id="song-audio">
-                                </audio> -->
-                            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <div class="login-content">
+                        <h3>UPLOAD YOUR NEW SONG</h3>
+                        <div class="form-group">
+                            <label for="username">Author</label>
+                            <input class="form-control" id="author" placeholder="Author">
                         </div>
-                    </div>
-                </template>
-            </div>
-        </div>
-    </div>
-    <!-- ##### Song Area End ##### -->
 
-    <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img"
-        style="background-image: url(img/bg-img/bg-2.jpg);">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="section-heading white">
-                        <p>See what’s new</p>
-                        <h2>Get In Touch</h2>
-                    </div>
-                </div>
-            </div>
+                        <div class="form-group">
+                            <label for="">Name song</label>
+                            <input class="form-control" type="text" id="name" placeholder="Name song">
+                        </div>
+                        <!-- <div class="form-group">
+                            <label for="">IMG song</label>
+                            <input class="form-control" type="text" id="photo" placeholder="Link image song">
+                        </div> -->
 
-            <div class="row">
-                <div class="col-12">
-                    <!-- Contact Form Area -->
-                    <div class="contact-form-area">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="name" placeholder="Name">
-                                    </div>
-                                </div>
-                                <div class="col-md-6 col-lg-4">
-                                    <div class="form-group">
-                                        <input type="email" class="form-control" id="email" placeholder="E-mail">
-                                    </div>
-                                </div>
-                                <div class="col-lg-4">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="subject" placeholder="Subject">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10"
-                                            placeholder="Message"></textarea>
-                                    </div>
-                                </div>
-                                <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i
-                                            class="fa fa-angle-double-right"></i></button>
-                                </div>
-                            </div>
-                        </form>
+                        <div class="form-group">
+                            <label for="">Link song</label>
+                            <input class="form-control" type="text" id="song" placeholder="Link song">
+                            <small  class="form-text text-muted">
+                                <i
+                                    class="fa fa-lock mr-2"></i>Your song will be known to everyone.</small>
+                        </div>
+
+
+
+
+                        <button id="submit-btn" class="oneMusic-btn">submit</button>
                     </div>
+
+
+
                 </div>
             </div>
         </div>
     </section>
-    <!-- ##### Contact Area End ##### -->
+    <!-- ##### Login Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
     <footer class="footer-area">
@@ -236,7 +170,6 @@
         </div>
     </footer>
     <!-- ##### Footer Area Start ##### -->
-
     <!-- ##### All Javascript Script ##### -->
     <!-- jQuery-2.2.4 js -->
     <script src="js/jquery/jquery-2.2.4.min.js"></script>
@@ -254,6 +187,7 @@
     <script type="module" src="firebase/logout.js"></script>
     <script type="module" src="firebase/narbar.js"></script>
     <script src="js/index.js"></script>
+    <script type="module" src="firebase/upload.js"></script>
 </body>
 
 </html>

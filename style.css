@@ -587,7 +587,7 @@ img {
   }
 }
 
-.header-area .oneMusic-main-menu .classy-navbar .classynav ul li .dropdown li .dropdown li .dropdown li a {
+.header-area .oneMusic-main-menu .classy-navbar .classynav ul li  .dropdown li .dropdown li .dropdown li a {
   border-bottom: 1px solid rgba(242, 244, 248, 0.7);
 }
 
@@ -1369,6 +1369,7 @@ img {
 }
 
 .single-song-area .song-play-area {
+  display: flex ;
   position: relative;
   z-index: 1;
   -webkit-box-flex: 0;
@@ -2419,7 +2420,6 @@ img {
 
 #imageindex {
   border-radius: 50%;
-  ;
   border: 1px solid #a1a1a1;
   height: 30px;
   width: 30px;
@@ -2440,6 +2440,75 @@ img {
 }
 #song-singer{
   color:white;
+}
+.dropdown1 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  padding: 5px;
+  text-align: center;
+  background-color: #333;
+}
+
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+  background-color: #fff;
+}
+.profilebody{
+  text-align: center;
+}
+#welcome-text{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+}
+#change-password{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: none;
+  border:none;
+  background-color: #fff;
+}
+#logout{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: none;
+  border:none;
+  background-color: #fff;
+
+}
+.btnhv a:hover {
+  color:#888888
+}
+#image{
+  margin-left:100px;
+  margin-bottom: 20px;
+}
+.row1{ 
+  /* padding-right: -150px; */
+  margin-right: -150px;
+  /* padding-left: 170px; */
+}
+#fullname{
+  text-align: center;
+  font-weight: 40%;
+  font-size:20px;
 }
 
 

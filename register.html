@@ -1,60 +1,3 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
-
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-<section class="signup">
-    <div class="container">
-        <div class="signup-content">
-            <div class="signup-form">
-                <h2 class="form-title">Sign up</h2>
-                <form method="POST" class="register-form" id="register-form">
-                    <div class="form-group">
-                        <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                        <input type="text" name="name" id="name" placeholder="Your Name"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="email"><i class="zmdi zmdi-email"></i></label>
-                        <input type="email" name="email" id="email" placeholder="Your Email"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                        <input type="password" name="pass" id="pass" placeholder="Password"/>
-                    </div>
-                    <div class="form-group">
-                        <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                        <input type="password" name="re_pass" id="re_pass" placeholder="Repeat your password"/>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
-                        <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
-                    </div>
-                    <div class="form-group form-button">
-                        <input type="submit" name="signup" id="signup" class="form-submit" value="Register"/>
-                    </div>
-                </form>
-            </div>
-            <div class="signup-image">
-                <figure><img src="images/signup-image.jpg" alt="sing up image"></figure>
-                <a href="login.html" class="signup-image-link">I am already member</a>
-            </div>
-        </div>
-    </div>
-</section>
-    <script type="module" src="./firebase/register.js"></script>
-</body>
-</html> -->
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -69,15 +12,17 @@
     <title>One Music - Modern Music HTML5 Template</title>
 
     <!-- Favicon -->
-    <link rel="icon" href="img/core-img/favicon.ico">
+    <link rel="icon" href="core-img/favicon.ico">
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 
 <body>
-    <!-- Preloader -->
 
 
     <!-- ##### Header Area Start ##### -->
@@ -90,7 +35,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="./core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -109,11 +54,11 @@
                             <div class="classynav">
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
-                                    <li><a href="albums-store.html">Albums</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="playlist.html">Playlist</a></li>
+                                    <li><a href="upload.html">Upload</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
-                                            <li><a href="albums-store.html">Albums</a></li>
+                                            <li><a href="playlist.html">Playlist</a></li>
                                             <li><a href="event.html">Events</a></li>
                                             <li><a href="blog.html">News</a></li>
                                             <li><a href="contact.html">Contact</a></li>
@@ -124,24 +69,10 @@
                                     <li><a href="blog.html">News</a></li>
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
-
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login /<a href="" id="loginBtn">Register</a>
-                                        </a>
-                                    </div>
-
-                                    <div class="imgindexx">
-                                        <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
-                                    </div>
-                                </div>
                             </div>
-                            <!-- Nav End -->
-
                         </div>
-                    </nav>
+                        <!-- Nav End -->
+
                 </div>
             </div>
         </div>
@@ -149,10 +80,10 @@
     <!-- ##### Header Area End ##### -->
 
     <!-- ##### Breadcumb Area Start ##### -->
-    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(img/bg-img/breadcumb3.jpg);">
+    <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(images/bg-img/breadcumb3.jpg);">
         <div class="bradcumbContent">
             <p>See what’s new</p>
-            <h2>Login</h2>
+            <h2>Register</h2>
         </div>
     </section>
     <!-- ##### Breadcumb Area End ##### -->
@@ -179,8 +110,13 @@
                                     <label for="exampleInputPassword1">Password</label>
                                     <input type="password" class="form-control" id="password" placeholder="Password">
                                 </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Enter the password</label>
+                                    <input type="password" class="form-control" id="password"
+                                        placeholder="Enter the password">
+                                </div>
                                 <button type="submit" name="signin" id="signin" class="oneMusic-btn"
-                                    value="Log in">Login</button>
+                                    value="Register">Register</button>
                             </form>
                         </div>
                     </div>
@@ -231,11 +167,8 @@
     <script src="./js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="./js/active.js"></script>
-    <script type="module" src="firebase/displayName.js"></script>
-    <script src="./js/index.js"></script>
-    <script type="module" src="firebase/logout.js"></script>
     <script type="module" src="firebase/narbar.js"></script>
-    <script type="module" src="firebase/login.js"></script>
+    <script type="module" src="./firebase/register.js"></script>
 </body>
 
 </html>

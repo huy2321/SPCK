@@ -28,106 +28,98 @@
   <header class="header-area">
     <!-- Navbar Area -->
     <div class="oneMusic-main-menu">
-      <div class="classy-nav-container breakpoint-off">
-        <div class="container">
-          <!-- Menu -->
-          <nav class="classy-navbar justify-content-between" id="oneMusicNav">
+        <div class="classy-nav-container breakpoint-off">
+            <div class="container">
+                <!-- Menu -->
+                <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
-            <!-- Nav brand -->
-            <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                    <!-- Nav brand -->
+                    <a href="index.html" class="nav-brand"><img src="./core-img/logo.png" alt=""></a>
 
-            <!-- Navbar Toggler -->
-            <div class="classy-navbar-toggler">
-              <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    <!-- Navbar Toggler -->
+                    <div class="classy-navbar-toggler">
+                        <span class="navbarToggler"><span></span><span></span><span></span></span>
+                    </div>
+
+                    <!-- Menu -->
+                    <div class="classy-menu">
+
+                        <!-- Close Button -->
+                        <div class="classycloseIcon">
+                            <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                        </div>
+
+                        <!-- Nav Start -->
+                        <div class="classynav">
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="playlist.html">Playlist</a></li>
+                                <li><a href="upload.html">Upload</a>
+                                    <ul class="dropdown">
+                                        <li><a href="index.html">Home</a></li>
+                                        <li><a href="playlist.html">Playlist</a></li>
+                                        <li><a href="event.html">Events</a></li>
+                                        <li><a href="blog.html">News</a></li>
+                                        <li><a href="contact.html">Contact</a></li>
+                                        <li><a href="elements.html">Elements</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="event.html">Events</a></li>
+                                <li><a href="blog.html">News</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+
+
+                            <ul>
+                                <li class="imgindexx">
+                                    <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
+                                    <ul class="dropdown">
+                                        <li><span  id="welcome-text">chao mung </span></li>
+                                        <li><button  id="change-password"> <span >Change password</span></button></li>
+                                        <li><button class="btnhv" id="logout"> Logout</button></li>
+                                    </ul>
+                                </li>
+                            </ul>
+
+
+
+                        </div>
+                    </div>
+                    <!-- Nav End -->
+
             </div>
-
-            <!-- Menu -->
-            <div class="classy-menu">
-
-              <!-- Close Button -->
-              <div class="classycloseIcon">
-                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
-              </div>
-
-              <!-- Nav Start -->
-              <div class="classynav">
-                <ul>
-                  <li><a href="index.html">Home</a></li>
-                  <li><a href="playlist.html">Playlist</a></li>
-                  <li><a href="#">Pages</a>
-                    <ul class="dropdown">
-                      <li><a href="index.html">Home</a></li>
-                      <li><a href="playlist.html">Playlist</a></li>
-                      <li><a href="event.html">Events</a></li>
-                      <li><a href="blog.html">News</a></li>
-                      <li><a href="contact.html">Contact</a></li>
-                      <li><a href="elements.html">Elements</a></li>
-                    </ul>
-                  </li>
-                  <li><a href="event.html">Events</a></li>
-                  <li><a href="blog.html">News</a></li>
-                  <li><a href="contact.html">Contact</a></li>
-                </ul>
-
-                <!-- Login/Register & Cart Button -->
-                <div class="login-register-cart-button d-flex align-items-center">
-                  <!-- Login/Register -->
-                  <div class="login-register-btn mr-50">
-                    <a href="login.html" id="loginBtn">Login</a>
-                    <a href="#">/</a>
-                    <a href="register.html" id="loginBtn">Register</a>
-                  </div>
-
-                  <div class="imgindexx">
-                    <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
-                  </div>
-
-                </div>
-              </div>
-              <!-- Nav End -->
-
-            </div>
-          </nav>
         </div>
-      </div>
     </div>
-  </header>
+</header>
   <!-- ##### Header Area End ##### -->
 
   <!-- ##### Breadcumb Area Start ##### -->
   <section class="breadcumb-area bg-img bg-overlay" style="background-image: url(images/bg-img/breadcumb3.jpg);">
     <div class="bradcumbContent">
       <p>Profile</p>
+
       <h2>Your Profile</h2>
+
     </div>
   </section>
-  <!-- ##### Breadcumb Area End ##### -->
 
 
-  <!-- ##### Add Area Start ##### -->
-  <div class="add-area mb-100">
+
+  <section class="login-area section-padding-100">
     <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="adds">
-            <a href="#"><img src="img/bg-img/add3.gif" alt=""></a>
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-8">
+          <div class="login-content">
+            <div class="form-group">
+              <img src="" alt="Avatar" id="image" height="100px">
+              <p id="fullname" class="form-control"></p>
+            </div>
+            <a href="profile-edit.html"><button class="oneMusic-btn" id="submit-btn">Submit</button></a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- ##### Add Area End ##### -->
-
-
-  <div>
-    <div>
-      <img src="" alt="Avatar" id="imageindex">
-      <div>
-        <p id="fullname"></p>
-      </div>
-      <a href="profile-edit.html"><button class="buton">Edit Profile</button></a>
-    </div>
-  </div>
+  </section>
 
   <!-- ##### Contact Area Start ##### -->
   <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img"
@@ -229,6 +221,8 @@
   <script type="module" src="firebase/displayName.js"></script>
   <script type="module" src="firebase/logout.js"></script>
   <script type="module" src="firebase/narbar.js"></script>
+  <script src="js/index.js"></script>
+  <script type="module" src="./firebase/profile.js"></script>
 </body>
 
 </html>
