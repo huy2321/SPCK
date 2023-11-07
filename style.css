@@ -1369,6 +1369,7 @@ img {
 }
 
 .single-song-area .song-play-area {
+  display: flex ;
   position: relative;
   z-index: 1;
   -webkit-box-flex: 0;
@@ -2419,7 +2420,6 @@ img {
 
 #imageindex {
   border-radius: 50%;
-  ;
   border: 1px solid #a1a1a1;
   height: 30px;
   width: 30px;
@@ -2496,7 +2496,20 @@ img {
 .btnhv a:hover {
   color:#888888
 }
-
+#image{
+  margin-left:100px;
+  margin-bottom: 20px;
+}
+.row1{ 
+  /* padding-right: -150px; */
+  margin-right: -150px;
+  /* padding-left: 170px; */
+}
+#fullname{
+  text-align: center;
+  font-weight: 40%;
+  font-size:20px;
+}
 
 
 

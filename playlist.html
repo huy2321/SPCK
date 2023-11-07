@@ -17,8 +17,8 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     <nav class="classy-navbar justify-content-between" id="oneMusicNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="img/core-img/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="./core-img/logo.png" alt=""></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -54,7 +54,7 @@
                                 <ul>
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="playlist.html">Playlist</a></li>
-                                    <li><a href="#">Pages</a>
+                                    <li><a href="upload.html">Upload</a>
                                         <ul class="dropdown">
                                             <li><a href="index.html">Home</a></li>
                                             <li><a href="playlist.html">Playlist</a></li>
@@ -69,25 +69,24 @@
                                     <li><a href="contact.html">Contact</a></li>
                                 </ul>
 
-                                <!-- Login/Register & Cart Button -->
-                                <div class="login-register-cart-button d-flex align-items-center">
-                                    <!-- Login/Register -->
-                                    <div class="login-register-btn mr-50">
-                                        <a href="login.html" id="loginBtn">Login</a>
-                                        <a href="#">/</a>
-                                        <a href="register.html" id="loginBtn">Register</a>
-                                    </div>
 
-                                    <div class="imgindexx">
+                                <ul>
+                                    <li class="imgindexx">
                                         <a href="profile.html"> <img src="" alt="Avatar" id="imageindex"></a>
-                                    </div>
+                                        <ul class="dropdown">
+                                            <li><span  id="welcome-text">chao mung </span></li>
+                                            <li><button  id="change-password"> <span >Change password</span></button></li>
+                                            <li><button class="btnhv" id="logout"> Logout</button></li>
+                                        </ul>
+                                    </li>
+                                </ul>
 
-                                </div>
+
+
                             </div>
-                            <!-- Nav End -->
-
                         </div>
-                    </nav>
+                        <!-- Nav End -->
+
                 </div>
             </div>
         </div>
@@ -121,27 +120,27 @@
     <!-- ##### Song Area Start ##### -->
     <div class="one-music-songs-area mb-70">
         <div class="container">
-            <div class="row" id="playlist">
+            <div class="row1" id="playlist">
                 <!-- Single Song Area -->
                 <template id="song-template">
                     <div class="col-12">
-                        
+
                         <div class="single-song-area mb-30 d-flex flex-wrap align-items-end">
-                            <div class="song-thumbnail">
-                                <img src="img/bg-img/s1.jpg" alt="" id="song-image">
-                            </div>
                             <div class="song-play-area">
-                                <div class="song-name1">
-                                    <span id="song-name">01. Main Hit Song </span><br><span id="song-singer">Name</span>
-                                </div> 
+                                <div class="song-thumbnail">
+                                    <img src="img/bg-img/s1.jpg" alt="" id="song-image" >
+                                </div>
                                 
+
                                 <div id="audioPlayer">
-                                    
+                                    <div class="song-name1">
+                                        <span id="song-name">01. Main Hit Song </span><br><span id="song-singer">Name</span>
+                                    </div>
                                     <audio controls>
-                                      <source src="audio.mp3" type="audio/mpeg" id="song-audio">
-                                      Your browser does not support the audio tag.
+                                        <source src="audio.mp3" type="audio/mpeg" id="song-audio">
+                                        Your browser does not support the audio tag.
                                     </audio>
-                                  </div>
+                                </div>
                                 <!-- <audio preload="auto" controls>
                                     <source src="audio/dummy-audio.mp3" id="song-audio">
                                 </audio> -->
@@ -155,7 +154,8 @@
     <!-- ##### Song Area End ##### -->
 
     <!-- ##### Contact Area Start ##### -->
-    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img" style="background-image: url(img/bg-img/bg-2.jpg);">
+    <section class="contact-area section-padding-100 bg-img bg-overlay bg-fixed has-bg-img"
+        style="background-image: url(img/bg-img/bg-2.jpg);">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -189,11 +189,13 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-group">
-                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control" id="message" cols="30" rows="10"
+                                            placeholder="Message"></textarea>
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
-                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i class="fa fa-angle-double-right"></i></button>
+                                    <button class="btn oneMusic-btn mt-30" type="submit">Send <i
+                                            class="fa fa-angle-double-right"></i></button>
                                 </div>
                             </div>
                         </form>
@@ -210,9 +212,13 @@
             <div class="row d-flex flex-wrap align-items-center">
                 <div class="col-12 col-md-6">
                     <a href="#"><img src="img/core-img/logo.png" alt=""></a>
-                    <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <p class="copywrite-text"><a
+                            href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                            Copyright &copy;
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved | This
+                            template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://colorlib.com" target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
                 </div>
 
                 <div class="col-12 col-md-6">
@@ -247,6 +253,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script type="module" src="firebase/displayName.js"></script>
     <script type="module" src="firebase/logout.js"></script>
     <script type="module" src="firebase/narbar.js"></script>
+    <script src="js/index.js"></script>
 </body>
 
 </html>
