@@ -2462,6 +2462,41 @@ img {
   display: block;
   background-color: #fff;
 }
+.profilebody{
+  text-align: center;
+}
+#welcome-text{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+}
+#change-password{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: none;
+  border:none;
+  background-color: #fff;
+}
+#logout{
+  font-weight: 700;
+  text-transform: capitalize;
+  color:#232323;
+  font-size: 16px;
+  padding-left: 15px;
+  border-radius: none;
+  border:none;
+  background-color: #fff;
+
+}
+.btnhv a:hover {
+  color:#888888
+}
+
 
 
 

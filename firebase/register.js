@@ -5,7 +5,7 @@ const usernameElm = document.getElementById('username');
 const passwordElm = document.getElementById('password');
 const registerBtn = document.getElementById('register-form');
 
-const handleRegister = () => {
+const handleRegister = (e) => {
   e.preventDefault()
     const email = usernameElm.value;
     const password = passwordElm.value;
