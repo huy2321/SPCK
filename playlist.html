@@ -16,6 +16,7 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -130,20 +131,16 @@
                                 <div class="song-thumbnail">
                                     <img src="img/bg-img/s1.jpg" alt="" id="song-image" >
                                 </div>
-                                
-
+                            
                                 <div id="audioPlayer">
                                     <div class="song-name1">
                                         <span id="song-name">01. Main Hit Song </span><br><span id="song-singer">Name</span>
                                     </div>
-                                    <audio controls>
+                                    <audio controls loop>
                                         <source src="audio.mp3" type="audio/mpeg" id="song-audio">
                                         Your browser does not support the audio tag.
                                     </audio>
                                 </div>
-                                <!-- <audio preload="auto" controls>
-                                    <source src="audio/dummy-audio.mp3" id="song-audio">
-                                </audio> -->
                             </div>
                         </div>
                     </div>
@@ -253,6 +250,7 @@
     <script type="module" src="firebase/displayName.js"></script>
     <script type="module" src="firebase/logout.js"></script>
     <script type="module" src="firebase/narbar.js"></script>
+    <script type="module" src="./firebase/upload.js"></script>
     <script src="js/index.js"></script>
 </body>
 
