@@ -2510,6 +2510,24 @@ img {
   font-weight: 40%;
   font-size:20px;
 }
+.delete{
+  position: absolute;
+  /* transform: translate( 0% ); */
+  /* background: green;
+  color: white; */
+  border: none;
+  cursor: pointer;
+  padding-left: 85%;
+   
+  border-radius: none;
+  border:none;
+}
+.delete{
+  display: none;
+}
+.col-12:hover .delete {
+    display: block;
+}
 
 
 

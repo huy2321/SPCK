@@ -1,24 +1,25 @@
-import { updateSong } from "https://www.gstatic.com/firebasejs/10.3.1/firebase-auth.js";
-import { auth } from "./config.js";
-
 const authorSong = document.getElementById('author');
 const nameSong = document.getElementById('name');
 const imgSong = document.getElementById('photo');
 const newSong = document.getElementById('song');
-const submit = document.getElementById('submitt-btn');
+const submit = document.getElementById('submit-btn');
 
-const handleUpdateSong = () => {
-  updateSong(auth.currentUser, {
-    displayAuthor: authorSong.value, displayName: nameSong.value,
-    photoURL: imgSong.value,
-    audioURL: newSong.value,
-  }).then(() => {
-    alert('COMPLETE!')
-    window.location = './playlist.html'
-  }).catch((error) => {
-    alert(error.code);
-  });
-}
+const addProduct = async () => {
+  const newProductRequest = {
+    title: nameSong.value,
+    user: authorSong.value,
+    image: imgSong.value,
+    audio: newSong.value,
+  };
+  await fetch(
+    "https://65225f4af43b179384146e0d.mockapi.io/products",
+    {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(newProductRequest),
+    }
+  );
+  alert("COMPLETE!")
+};
 
-
-submit.addEventListener("click", handleUpdateSong);
+submit.addEventListener("click", addProduct);
