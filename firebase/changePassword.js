@@ -7,7 +7,7 @@ const changeBtn = document.getElementById('change-btn');
 const handleChangePassword = () => {
     const user = auth.currentUser;
     updatePassword(user, newInput.value).then(() => {
-        alert('doimk thanh cong')
+        alert('doi mk thanh cong')
         
     }).catch((error) => {
         alert(error.code)
